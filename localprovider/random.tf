@@ -12,3 +12,7 @@ resource "random_string" "random" {
     special = false
     upper = false
 }
+
+output "random" {
+    value = random_string.random.result
+}
