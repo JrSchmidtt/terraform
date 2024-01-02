@@ -78,6 +78,11 @@ Show the current state of the terraform project in a json format.
 terraform show -json
 ```
 
+Indent terraform files.
+```bash
+terraform fmt
+```
+
 Validate the syntax of the terraform files.
 ```bash	
 terraform validate
