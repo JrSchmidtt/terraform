@@ -13,3 +13,8 @@ resource "archive_file" "zipfile" {
     source_dir = "data"
     output_path = "data/backup.zip"
 }
+
+# print the output path of the zip file
+output "zipfile" {
+    value = archive_file.zipfile.output_path
+}
