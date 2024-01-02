@@ -68,6 +68,11 @@ Initialize the terraform project.
 terraform init
 ```
 
+Show the current state of the terraform project.
+```bash
+terraform show
+```
+
 Validate the syntax of the terraform files.
 ```bash	
 terraform validate
