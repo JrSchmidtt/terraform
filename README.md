@@ -73,6 +73,11 @@ Show the current state of the terraform project.
 terraform show
 ```
 
+Show the current state of the terraform project in a json format.
+```bash
+terraform show -json
+```
+
 Validate the syntax of the terraform files.
 ```bash	
 terraform validate
