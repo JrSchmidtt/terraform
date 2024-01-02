@@ -11,7 +11,7 @@ terraform {
 resource "archive_file" "zipfile" { 
     type = "zip"
     source_dir = "data"
-    output_path = "data/backup.zip"
+    output_path = "backup.zip"
 }
 
 # print the output path of the zip file
