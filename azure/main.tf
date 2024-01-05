@@ -19,7 +19,7 @@ variable "vnet-ip" {
 }
 resource "azurerm_virtual_network" "vnet" {
   name                = "terraform-vnet"
-  location            = azurerm_resource_group.rg.location
+  location            = azurerm_resource_group.rg.location == "" ? "brazilsouth" : azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   address_space       = concat(var.vnet-ip, ["192.168.0.0/16"])
 }
