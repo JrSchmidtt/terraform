@@ -1,0 +1,8 @@
+# login to azure
+az login
+
+# create a resource group for remote state storage (if you don't already have one).
+az group create --name terraform-state --location brazilsouth
+
+# create a storage account for remote state storage.
+az storage account create --name terraformstate --resource-group terraform-state --location brazilsouth --sku Standard_LRS
